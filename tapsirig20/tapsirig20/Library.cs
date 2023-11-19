@@ -67,7 +67,7 @@ namespace tapsirig20
             books[books.Length - 1] = book;
             
                         //Array.Resize(ref books, books.Length + 1);
-            if (BookLimit <= books.Length)
+            if (BookLimit == books.Length)
             {
                 //Array.Resize(ref books, books.Length + 1); 
                 throw new CapacityLimitException(message:"yer doludu");
